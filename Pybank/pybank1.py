@@ -60,6 +60,14 @@ print("Greatest Increase in Revenue: " + str(fnl_sorted_list[-1]))
 print("")
 print("Greatest Decrease in Revenue: " + str(fnl_sorted_list[0]))
 
+with open("Output_1.txt", "w") as text_file:
+    print(f"Financial Analysis", file=text_file)
+    print(f"-------------------------", file=text_file)
+    print(f"Total Months: {row_count}", file=text_file)
+    print(f"Total Revenue: ${total_revenue}", file=text_file)
+    print(f"Average Revenue Change: ${round(average_rate, 2)}", file=text_file)
+    print(f"Greatest Increase in Revenue: {fnl_sorted_list[-1]}", file=text_file)
+    print(f"Greatest Decrease in Revenue: {fnl_sorted_list[0]}", file=text_file)
 
 
 
